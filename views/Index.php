@@ -32,9 +32,9 @@ foreach ($hotels as $hotel){
 <?php
  include __DIR__ ."/./header.php";
 ?>
-    <main class="container">
-        <div class="container mt-4 ">
-        <table class="table table-striped table-hover">
+    <main class="container pt-5">
+        <div class="container mt-4">
+        <table class="table table-striped table-hover mb-4">
             <thead>
                 <tr>
                     <th scope="col">Hotel</th>
@@ -47,12 +47,8 @@ foreach ($hotels as $hotel){
             <tbody>
                 <?php echo $template ?>
             </tbody>
-        
-          
         </table>
         </div>
-     
-        
     </main>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
