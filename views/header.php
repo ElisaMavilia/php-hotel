@@ -5,13 +5,13 @@
         </h1>
     </div>
     <div id="rigth-header" >
-        <form action="Index.php" method="GET" class="d-flex">
-            <select class="form-select" aria-label="Search Hotel">
+        <form action="Index.php" method="GET" class="d-flex" name="options">
+            <select class="form-select" aria-label="Search Hotel" name="options">
                 <option value="all">All</option>
                 <option value="0">Parking</option>
                 <option value="1">Vote</option>
             </select>
-            <button type="button" class="btn btn-light ms-2">Light</button>
+            <button type="button" class="btn btn-light ms-2">Search</button>
         </form>
     </div>
     

@@ -2,6 +2,8 @@
 
 $template="";
 
+$options = $_GET;
+
 include __DIR__ ."/../models/data.php";
 
 foreach ($hotels as $hotel){
@@ -9,9 +11,15 @@ foreach ($hotels as $hotel){
     };
 
     /* var_dump($hotels);  */
-    function GetResults(){
-       array_filter ($hotels);
-    };
+    
+    if(!empty($options) || $options == true){
+    
+       array_filter($hotels, function ($hotel) use ($options){
+            return $hotel['parking'] == $options;
+        });
+    }else{
+        $options = $_GET;
+    }
 ?>
 
 <!DOCTYPE html>
