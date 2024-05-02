@@ -1,5 +1,12 @@
 <?php 
-include __DIR__ ."/../models/Data.php";
+
+$template="";
+
+include __DIR__ ."/../models/data.php";
+foreach ($hotels as $hotel){
+        $template .= "<ul> <li>{$hotel['name']}</li> <li>{$hotel['description']}</li> <li>{$hotel['parking']}</li> <li>{$hotel['vote']}</li> <li>{$hotel['distance_to_center']}</li> </ul>";
+    }
+    /* var_dump(($hotels)); */
 
 ?>
 
@@ -12,7 +19,9 @@ include __DIR__ ."/../models/Data.php";
 </head>
 <body>
     <main>
-        main
+        <div>
+           <?php echo $template ?>
+        </div>
     </main>
 </body>
 </html>
