@@ -1,8 +1,22 @@
 body{
     font-family: "Roboto", sans-serif;
 } 
+
 header{
     border-bottom: 1px solid grey;
     background-color: black;
     color: white;
+}
+
+#left-header{
+    width: 70%;
+}
+
+#rigth-header{
+    width: 30%;
+    margin-left: 300px;
+}
+
+form{
+    width: 250px;
 }
