@@ -9,12 +9,12 @@ header{
 }
 
 #left-header{
-    width: 70%;
+    width: 40%;
 }
 
 #rigth-header{
-    width: 30%;
-    margin-left: 300px;
+    width: 60%;
+    margin-left: 750px;
 }
 
 form{

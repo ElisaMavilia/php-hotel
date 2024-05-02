@@ -8,11 +8,10 @@ foreach ($hotels as $hotel){
         $template .= "<tr><td>{$hotel['name']}</td> <td>{$hotel['description']}</td> <td>{$hotel['parking']}</td> <td>{$hotel['vote']}</td> <td>{$hotel['distance_to_center']}</td> </tr>";     
     };
 
-    if ($hotel['parking']=== true){
-       
-    }
-
     /* var_dump($hotels);  */
+    function GetResults(){
+       array_filter ($hotels);
+    };
 ?>
 
 <!DOCTYPE html>
@@ -28,10 +27,9 @@ foreach ($hotels as $hotel){
     <title>PHP Hotel</title>
 </head>
 <body>
-   
-<?php
- include __DIR__ ."/./header.php";
-?>
+    <?php
+    include __DIR__ ."/./header.php";
+    ?>
     <main class="container pt-5">
         <div class="container mt-4">
         <table class="table table-striped table-hover mb-4">
