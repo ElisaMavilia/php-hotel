@@ -7,10 +7,9 @@
     <div id="rigth-header" class="">
         <form action="Index.php" method="GET">
             <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>Search Hotel</option>
+                <option value="1">Parking</option>
+                <option value="2">Vote</option>
             </select>
         </form>
     </div>
