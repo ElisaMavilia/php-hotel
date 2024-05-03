@@ -1,8 +1,7 @@
 <?php 
 
 $template="";
-
-$options = $_GET;
+ $options = $_GET;
 
 include __DIR__ ."/../models/data.php";
 
@@ -11,15 +10,19 @@ foreach ($hotels as $hotel){
     };
 
     /* var_dump($hotels);  */
+    $options = $hotels;
+    if(!empty($options) || $_GET['parking'] == 0 ){
+       /*  $parking = $_GET['parking']; */
+        $accomodation = array_filter($hotels, function ($hotel) use ($options){
+        return $hotel['parking'] == $options;
+       },
+      
+    );
     
-    if(!empty($options) || $options == true){
-    
-       array_filter($hotels, function ($hotel) use ($options){
-            return $hotel['parking'] == $options;
-        });
     }else{
         $options = $_GET;
     }
+    /* var_dump($hotel['parking']); */
 ?>
 
 <!DOCTYPE html>

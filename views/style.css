@@ -20,3 +20,12 @@ header{
 form{
     width: 250px;
 }
+
+#login-header{
+    font-size: 8px;
+    color: #989183;
+}
+
+#login-container{
+    background-color: black;
+}
