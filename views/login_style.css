@@ -27,6 +27,10 @@ label{
     margin-right: 100px;
 }
 
+form{
+    margin-top: 100px;
+}
+
 img{
     display: block;
     margin-left: 10px;
