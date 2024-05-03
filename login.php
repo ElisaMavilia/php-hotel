@@ -1,3 +1,6 @@
+<?php
+include __DIR__ . '/./controller/auth.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +14,7 @@
     <title>Login page</title>
 </head>
 <body>
+
 <div id="login-container" class="d-flex justify-content-center align-items-center pt-5">
         <form id="loginform" action="login.php" method="POST">
             <img class="mb-4" src="views/img/hotel_logo.png" alt="logo" width="100">
