@@ -10,6 +10,7 @@ body{
 
 .btn{
     background-color:#989183;
+    font-size: 0.8em;
 }
 
 label{
@@ -19,4 +20,15 @@ label{
 
 #login-container{
     margin-top: 150px;
+    border: 1px solid #989183;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+img{
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
 }
